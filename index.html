@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Based on HTML5 Bones | http://html5bones.com -->
+ 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Uptour</title>
+	
+	<meta name="description" content="Uptour helps you travel like a local">
+	
+    <!-- Mobile-friendly viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+   <!-- Style sheet link -->
+   <link href='normalize.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Volkhov' rel='stylesheet' type='text/css'>
+	<style>
+		h1, h3, p {
+			color: white;
+		}
+		video.background {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -100;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+			background: url(images/grandcentral.png) no-repeat;
+			background-size: cover;
+		}
+		div.video-overlay {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -99;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+			background-color: rgba(0,0,0,0.5);
+			background-size: cover;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.title {
+			font-family: 'Abril Fatface', cursive;
+			font-size: 5em;
+			color: #FFF;
+			margin-bottom: 0px;
+		}
+		p.info {
+			text-align: center;
+			font-family: 'Volkhov', serif;
+		}
+		div.mc-field-group {
+			padding-bottom: 5px;
+		}
+		@media (max-width:499px){
+			h1.title {
+				font-size:3em;
+				}}
+	</style>
+	
+</head>
+<body>
+	<div class="center">
+		<h1 class="title">Uptour.co</h1>
+		<h3 class="slogan">Travel like a local or something</h3>
+	
+	
+ 
+	
+		<p class="info">Sign up and get notified when we launch!</p>
+		<div id="mc_embed_signup">
+			<form action="//uptour.us11.list-manage.com/subscribe/post?u=477aac523c167276033c4cbd4&amp;id=f8da0055ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			    <div id="mc_embed_signup_scroll">
+			<div class="mc-field-group">
+				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+			</div>
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_477aac523c167276033c4cbd4_f8da0055ae" tabindex="-1" value=""></div>
+			    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+			    </div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="video">
+		<div class="video-overlay"></div>
+		<video class="background" autoplay loop poster="images/grandcentral.png" >
+			<source src="videos/grandcentral.webm" type="video/webm">
+			<source src="videos/grandcentral.mp4" type="video/mp4">
+		</video>
+	</div>
+
+</body>
